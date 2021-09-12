@@ -57,12 +57,12 @@ Only the JUMPBOX PROVISIONER machine can accept connections from the Internet. A
 
 Machines within the network can only be accessed by JUMPBOX PROVISIONER.
 
-- Which machine did you allow to access your ELK VM?
+Which machine did you allow to access your ELK VM?
 - JUMPBOX PROVISIONER
 
-- What was its IP address?
-10.1.0.4 (PRIVATE)
-20.36.32.197 (PUBLIC)
+What was its IP address?
+- 10.1.0.4 (PRIVATE)
+- 20.36.32.197 (PUBLIC)
 
 A summary of the access policies in place can be found in the table below.
 
@@ -75,12 +75,13 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- IT ALLOWS FOR SETUP IN MINUTES USING SSH WITHOUT INSTALLING ANYTHING ON SERVERS
+- IT AUTOMATES MULTIPLE IT APPLICATIONS
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- INSTALL DOCKER.IO
+- INSTALL PYTHON-PIP
+- DOWNLOAD AND LAUNCH ELK DOCKER CONTAINER
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
