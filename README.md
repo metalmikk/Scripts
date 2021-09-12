@@ -7,7 +7,7 @@ The files in this repository were used to configure the network depicted below.
 
 ![Week 12 Homework Submission](https://user-images.githubusercontent.com/84828582/132951284-0174e5e1-cd24-48a8-92e6-cce3df52eed2.png)
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the CONFIGURATION fileS may be used to install only certain pieces of it, such as Filebeat.
 
   - _TODO: Enter the playbook file._
 
@@ -24,11 +24,14 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
+Load balancing ensures that the application will be highly SECURE, in addition to restricting ACCESS to the network.
+
 - Load balancers add resiliency by rerouting live traffic from one server to another if a server falls prey to a DDoS attack or otherwise becomes unavailable.
+
 - Jump-box are highly secured computers that are never used for non-admin tasks. -Throughout the years, jump-box has improved into an even more comprehensive/lock-down secure admin workstation to decrease the chances of hackers/malware infection.
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the NETWORK and system LOGS.
+
 What does Filebeat watch for? 
 - It monitors the log files/locations that you specify and forwards them to Elasticsearch/Logstash for indexing.
  
@@ -49,19 +52,23 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the JUMPBOX PROVISIONER machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
+- 20.36.32.197
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by JUMPBOX PROVISIONER.
+- Which machine did you allow to access your ELK VM? 
+JUMPBOX PROVISIONER
+- What was its IP address?
+10.1.0.4 (PRIVATE)
+20.36.32.197 (PUBLIC)
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes                 | 20.36.32.197    |
+| Web-1         | No                     | 10.1.0.7                     |
+| Web-2         | No                    | 10.1.0.6                      |
 
 ### Elk Configuration
 
