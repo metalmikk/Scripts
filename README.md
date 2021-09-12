@@ -56,8 +56,10 @@ Only the JUMPBOX PROVISIONER machine can accept connections from the Internet. A
 - 20.36.32.197
 
 Machines within the network can only be accessed by JUMPBOX PROVISIONER.
-- Which machine did you allow to access your ELK VM? 
-JUMPBOX PROVISIONER
+
+- Which machine did you allow to access your ELK VM?
+- JUMPBOX PROVISIONER
+
 - What was its IP address?
 10.1.0.4 (PRIVATE)
 20.36.32.197 (PUBLIC)
@@ -67,8 +69,8 @@ A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
 | Jump Box | Yes                 | 20.36.32.197    |
-| Web-1         | No                     | 10.1.0.7                     |
-| Web-2         | No                    | 10.1.0.6                      |
+| Web-1         | No                     | 10.1.0.4                     |
+| Web-2         | No                    | 10.1.0.4                      |
 
 ### Elk Configuration
 
